@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+
+}
+
+.main-circle {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: #c31432;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #240b36, #c31432);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #240b36, #c31432);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 50%;
+  z-index: 1000;
+  top: -100px;
+  left: -100px;
+  opacity: 0.1;
+
+}
+
+/* navbar Styling start */
+
+.logoimage {
+  width: 100px;
+  height: 100px;
+
+}
+
+
+
+.navbar-nav {
+  margin: auto !important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #ED213A;
+  letter-spacing: 1px;
+  line-height: 10px;
+  font-weight: bold;
+  margin-right: 20px !important;
+  transition: .3s all ease-in-out;
+  padding: 15px 15px;
+  text-transform: uppercase;
+
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:active {
+  color: aqua;
+  background: rgba(0, 0, 0, 0.8);
+
+  border-bottom: 2px solid aqua !important;
+}
+
+
+
+
+
+
+
+
+
+.navbar-toggler {
+  border: none !important;
+  outline: none !important;
+  padding: 0px 5px !important;
+}
+
+/* navbar styling end  here*/
+
+
+/* news container styling start from here*/
+
+
+.news-container {
+  margin: 20px 0;
+}
+
+
+
+.news1,
+.news2,
+.news3 {
+  overflow: hidden !important;
+  position: relative !important;
+  border-radius: 3px;
+  padding: 0px !important;
+  height: 100%;
+  background: #70e1f5;
+  background: -webkit-linear-gradient(to right, #ffd194, #70e1f5);
+  background: linear-gradient(to right, #ffd194, #70e1f5);
+
+  z-index: 2000;
+
+
+
+
+}
+
+.news1:hover,
+.news2:hover {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.news1 {
+  margin: 10px 0;
+}
+
+.news2,
+.news3 {
+  margin: 10px 10px;
+
+}
+
+
+
+
+
+.artimage {
+  max-width: 100%;
+  /* max-height: 100%; */
+  transition: .5s all ease-in-out;
+  object-fit: fill;
+  z-index: -1000;
+
+
+}
+
+
+.artimage:hover {
+  opacity: 1;
+  cursor: pointer;
+  transform: scale(1.05);
+  /* transform: translate(-5px, -5px); */
+
+}
+
+.news1 div {
+  position: absolute !important;
+  bottom: 5px !important;
+  left: 25px;
+  padding: 20px;
+  background: transparent;
+  transition: .3s all ease-in-out;
+}
+
+.news1 div h2 {
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: normal;
+  font-size: 40px;
+  z-index: 100;
+  line-height: 1;
+}
+
+
+
+.news1 div .fashion {
+  outline: none;
+  border: none;
+  padding: 5px;
+  color: #fff;
+  /* background:#f953c6;
+ */
+  background: #12c2e9;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  margin: 7px 0;
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.news3 div .sports {
+  outline: none;
+  border: none;
+  padding: 5px;
+  color: #fff;
+
+
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+.news2 div,
+.news3 div {
+  position: absolute !important;
+  bottom: 5px !important;
+  left: 25px;
+  padding: 20px;
+  background: transparent;
+
+}
+
+
+
+
+.news2 div h6,
+.news3 div h6 {
+  color: #fff;
+  font-weight: 1000;
+  z-index: 100;
+}
+
+
+
+.news2 div .politics {
+  outline: none;
+  border: none;
+  padding: 5px;
+  color: #fff;
+  background: #f12711;
+  margin: 7px 0;
+
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+
+
+
+.news3 div .sports {
+  outline: none;
+  border: none;
+  padding: 5px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: bold;
+  background: #FBD786;
+
+  margin: 7px 0;
+
+  border-radius: 3px;
+  font-size: 12px;
+}
+
+
+/* news container styling ends here here*/
+
+
+/* trending container styling starts from  here */
+
+
+.trending-heading {
+  position: relative;
+  margin-top: 50px;
+
+}
+
+.trending-heading::before {
+  position: absolute;
+  width: 20vh;
+  height: 20vh;
+  top: -50px;
+  left: -50px;
+  content: '';
+  opacity: 0.2;
+  background: #9D50BB;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6E48AA, #9D50BB);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6E48AA, #9D50BB);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  border-radius: 50%;
+
+}
+
+
+
+
+
+.trending-container {
+  width: 100%;
+  height: 90vh;
+  padding: 10px;
+  display: grid;
+  margin: 100px 0;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.trending-container .card-main:nth-child(1) {
+  height: 30vh;
+  border: none !important;
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.25);
+  transition: .3s all ease-in-out;
+  background: url('./images/fashion.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.trending-container .card-main:nth-child(2) {
+  height: 30vh;
+  border: none !important;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.25);
+  transition: .3s all ease-in-out;
+  background: url('./images/tech.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+
+}
+
+.trending-container .card-main:nth-child(3) {
+  height: 30vh;
+  border: none !important;
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.25);
+  transition: .3s all ease-in-out;
+  background: url('./images/travel.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.trending-container .card-main:hover {
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+
+}
+
+
+
+.card-main .topic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left: 0;
+  transition: .3s all ease-in-out;
+  background: rgba(0, 0, 0, 0.1);
+  /* opacity: 0.9; */
+
+
+
+}
+
+.card-main .card-button {
+  border: none;
+  cursor: pointer;
+  padding: 2px 8px;
+  background: #2193b0;
+  color: #fff;
+  border-radius: 3px;
+  outline: none;
+  transition: .5s all ease-in-out;
+}
+
+.card-main .card-button:hover {
+  background: #4040a1;
+}
+
+
+/* trending container styling ends here */
+
+
+
+/* responsive using media queries*/
+
+@media only screen and (max-width:768px) {
+
+
+
+
+  .navbar-nav .nav-link {
+    padding: 10px;
+  }
+
+  .news1 {
+    margin: 0 10px;
+  }
+
+  .news1 div h2 {
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .main-circle {
+    width: 200px;
+    height: 200px;
+    top: -50px;
+    left: -50px;
+  }
+
+  .trending-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+  }
+
+  .trending-heading::before {
+    width: 15vh;
+    height: 15vh;
+    top: -20px;
+    left: -20px;
+  }
+
+
+}
